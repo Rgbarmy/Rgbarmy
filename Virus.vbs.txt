@@ -1,0 +1,124 @@
+Set WshShell = WScript.CreateObject("WScript.Shell")
+
+strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
+
+x=msgbox ("Warnung, moegliche Bedrohungen erkannt" ,2+16, "Windows Defender")
+WScript.sleep 1000
+msgbox "Achtung, dll Datei konnte nicht gefunden werden",48,ERROR
+WScript.sleep 400
+msgbox "Ein Fehler ist aufgetreten",ERROR
+
+
+WScript.sleep 2000
+msgbox "Achtung: Wichtige Systemdateien konnten nicht gefunden werden!",48,ERROR
+WScript.sleep 1000
+WshShell.Run "cmd"
+WScript.sleep 400
+WshShell.sendkeys "cls"
+WScript.sleep 200
+wshShell.sendkeys "{ENTER}"
+wshshell.sendkeys "N"
+WScript.sleep 200
+wshshell.sendkeys "a"
+WScript.sleep 200
+wshshell.sendkeys "?"
+WScript.sleep 200
+wshshell.sendkeys " "
+WScript.sleep 200
+wshshell.sendkeys "H"
+WScript.sleep 200
+wshshell.sendkeys "a"
+WScript.sleep 200
+wshshell.sendkeys "s"
+WScript.sleep 200
+wshshell.sendkeys "t"
+WScript.sleep 200
+wshshell.sendkeys " "
+WScript.sleep 200
+wshshell.sendkeys "d"
+WScript.sleep 200
+wshshell.sendkeys "u"
+WScript.sleep 200
+wshshell.sendkeys " "
+WScript.sleep 200
+wshshell.sendkeys "A"
+WScript.sleep 200
+wshshell.sendkeys "n"
+WScript.sleep 200
+wshshell.sendkeys "g"
+WScript.sleep 200
+wshshell.sendkeys "s"
+WScript.sleep 200
+wshshell.sendkeys "t"
+WScript.sleep 200
+wshshell.sendkeys ","
+WScript.sleep 200
+wshshell.sendkeys " "
+WScript.sleep 200
+wshshell.sendkeys strName
+WScript.sleep 200
+wshshell.sendkeys "?"
+x=msgbox ("?",4)
+wshshell.sendkeys "{ENTER}"
+wshshell.sendkeys "cls"
+wshshell.sendkeys "{ENTER}"
+wshshell.sendkeys "H"
+WScript.sleep 200
+wshshell.sendkeys "A"
+WScript.sleep 200
+wshshell.sendkeys "H"
+WScript.sleep 200
+wshshell.sendkeys "A"
+WScript.sleep 200
+wshshell.sendkeys "H"
+WScript.sleep 200
+wshshell.sendkeys "A"
+WScript.sleep 200
+WScript.sleep 1000
+WshShell.sendkeys "cls"
+wshshell.sendkeys "{ENTER}"
+wshshell.sendkeys "exit"
+WScript.sleep 100
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 400
+x=msgbox("Warnung, dll Datei konnte nicht gefunden werden C:/Windows/Drivers/Windows32 Directory",0+48,"Windows") 
+WScript.sleep 500
+x=msgbox("Achtung, Bedrohung erkannt!",0+48,"Windows Defender") 
+WshShell.Run "cmd"
+WScript.sleep 500
+wshshell.sendkeys "dir"
+WScript.sleep 100
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 1000
+wshshell.sendkeys "dir"
+WScript.sleep 100
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 2000
+wshshell.sendkeys "cls"
+WScript.sleep 40
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 40
+wshshell.sendkeys "deleting..."
+WScript.sleep 40
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 40
+wshshell.sendkeys "cls"
+WScript.sleep 40
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 2000
+wshshell.sendkeys "deleting User"
+WScript.sleep 40
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 40
+wshshell.sendkeys "cls"
+WScript.sleep 40
+wshshell.sendkeys "{ENTER}"
+WScript.sleep 2000
+
+wshshell.sendkeys "Laufwerk wird formatiert: 'C:'..."
+WScript.sleep 200
+
+x=msgbox ("Sollen wirklich alle Dateien auf diesem Laufwerk einschliesslich dem Betribsystem entfernt werden?" ,4+32, "C:\")
+
+wshshell.sendkeys "Formatierung..."
+
